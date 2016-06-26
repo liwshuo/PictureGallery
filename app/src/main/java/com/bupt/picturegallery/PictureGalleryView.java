@@ -355,12 +355,14 @@ public class PictureGalleryView extends FrameLayout {
         }
 
         private void doHideAnimation() {
+            mDescribeContainer.setVisibility(GONE);
             final Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.fade_out);
             mDescribeContainer.startAnimation(animation);
 
         }
 
         private void doShowAnimation() {
+            mDescribeContainer.setVisibility(VISIBLE);
             final Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
             mDescribeContainer.startAnimation(animation);
         }
