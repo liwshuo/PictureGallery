@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/galleryBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" />
+
+    <com.bupt.picturegallery.RecyclerGallery
+        android:id="@+id/recyclerGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"></com.bupt.picturegallery.RecyclerGallery>
+
+        <ScrollView
+            android:id="@+id/describeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_gravity="bottom"
+            android:paddingLeft="20dp"
+            android:paddingRight="9dp"
+            android:paddingTop="10dp"
+            android:background="#99000000"
+            android:scrollbarDefaultDelayBeforeFade="500"
+            android:scrollbarFadeDuration="500"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbVertical="@drawable/picture_gallery_scrollbar_thumb">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/describeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingRight="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="test" />
+
+                <TextView
+                    android:id="@+id/describeContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="测试测试" />
+            </LinearLayout>
+        </ScrollView>
+</FrameLayout>
